@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}" defer></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ current_user.username.upper() }}</h1>
+        <button onclick="openInstructions()">Let's Start</button>
+        <button onclick="window.location.href='{{ url_for('logout') }}'">Logout</button>
+    </div>
+
+    <!-- Instructions Popup -->
+    <div id="popupOverlay" class="popup-overlay" style="display: none;">
+        <div class="popup">
+            <h2>Instructions</h2>
+            <p>Please read the instructions before starting the game.</p>
+            <ul>
+                <li>Instruction 1: Understand the game rules.</li>
+                <li>Instruction 2: Collect points by answering questions correctly.</li>
+                <li>Instruction 3: Have fun!</li>
+            </ul>
+            <label>
+                <input type="checkbox" id="agreeCheckbox"> I agree to the terms and conditions
+            </label>
+            <div>
+                <button id="startButton" data-url="{{ url_for('game') }}" disabled onclick="startGame()">I Agree</button>
+                <button onclick="closeInstructions()">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #abd4ce, #7688dc);
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px; /* Increased padding for better spacing */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    backdrop-filter: blur(10px); /* Added blur effect for modern look */
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Max width for larger screens */
+}
+
+h1 {
+    font-size: 3rem; /* Increased font size for prominence */
+    margin-bottom: 30px; /* Increased margin for spacing */
+    font-weight: 700; /* Increased font weight for better visibility */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Added text shadow for better contrast */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensures the form takes the full width of the container */
+}
+
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px; /* Increased padding for better touch target */
+    margin: 10px 0;
+    border-radius: 25px;
+    border: 2px solid #ff6b6b; /* Added border for better definition */
+    font-size: 1.2rem; /* Increased font size for readability */
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for border color and shadow */
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff4757; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(255, 113, 113, 0.5); /* Added shadow effect on focus */
+}
+
+input::placeholder {
+    color: #999;
+    opacity: 1; /* Ensure the placeholder is fully visible */
+}
+
+button {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px; /* Increased padding for better touch target */
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff6b6b;
+    color: white;
+    font-size: 1.5rem; /* Increased font size for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Added transition for box-shadow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Added shadow for button */
+}
+
+button:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+a {
+    color: #ff6b6b;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff4757; /* Change color on hover for better visibility */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Adjusted for smaller screens */
+    }
+
+    input {
+        font-size: 1.1rem; /* Adjusted input font size for smaller screens */
+    }
+
+    button {
+        font-size: 1.3rem; /* Adjusted button font size for smaller screens */
+    }
+
+    .container {
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Adventure Game</title>
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <!-- Google Fonts for enhanced typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Welcome to the Text Adventure Game!</h1>
+
+    <div>
+        <!-- Navigation buttons for user actions -->
+        <button onclick="window.location.href='{{ url_for('register') }}'">Register</button>
+        <button onclick="window.location.href='{{ url_for('login') }}'">Login</button>
+    </div>
+
+    <!-- External JavaScript file link -->
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+
+</html>

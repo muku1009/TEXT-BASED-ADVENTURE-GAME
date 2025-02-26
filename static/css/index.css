@@ -1,0 +1,66 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 4rem; /* Increased font size */
+    font-weight: 700; /* Increased font weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added text shadow */
+}
+
+audio {
+    display: none;
+}
+
+/* Styled buttons */
+button {
+    font-size: 1.5rem; /* Increased button font size */
+    padding: 15px 30px; /* Increased button padding */
+    margin: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Added transition for box-shadow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Added box shadow for depth */
+}
+
+button:hover {
+    background-color: #ff4757;
+    transform: scale(1.1); /* Increased scale on hover for more effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Reset shadow on active */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem; /* Adjusted for smaller screens */
+    }
+
+    button {
+        font-size: 1.2rem; /* Adjusted button font size for smaller screens */
+        padding: 12px 24px; /* Adjusted button padding for smaller screens */
+    }
+}

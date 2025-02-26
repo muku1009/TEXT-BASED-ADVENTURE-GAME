@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Paranormal Adventure Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Text Paranormal Adventure</h1>
+        <div id="story-text"></div>
+        <div id="question-text"></div>
+        
+        <!-- Buttons for Yes and No -->
+        <div id="button-container">
+            <button id="yes-button" onclick="nextQuestion('yes')">Yes</button>
+            <button id="no-button" onclick="nextQuestion('no')">No</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Vibrant gradient background */
+    text-align: center;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Larger shadow for depth */
+    padding: 30px;
+    width: 90%;
+    max-width: 800px; /* Increased width for a bigger container */
+    margin: 0 auto;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.game-container:hover {
+    transform: scale(1.05); /* Slight zoom effect when hovering over the container */
+}
+
+h1 {
+    color: #ff5722; /* Vibrant heading color */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#story-text {
+    font-size: 20px;
+    color: #444444;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+#question-text {
+    font-size: 20px;
+    color: #444444;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+#input-container {
+    margin-top: 25px;
+}
+
+#answer-input {
+    padding: 12px;
+    width: 250px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid #ff7e5f; /* Color matching the background gradient */
+    outline: none;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+#answer-input:focus {
+    border-color: #feb47b; /* Highlight border when input is focused */
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #388e3c;
+}
+
+button:focus {
+    outline: none;
+}
+
+#input-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between Restart and Logout buttons */
+}
